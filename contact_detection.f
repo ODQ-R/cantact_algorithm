@@ -47,7 +47,7 @@ PROGRAM contact_detection
 				Fij(i,:) = 0.00
 			end if					
 			
-			V(i,:)  = V(i,:) !+ ((dt/m) * FT(i,1))
+			V(i,:)  = V(i,:) !+ ((dt/m) * FT(i,1)) 
 			
 			!write(*,*) i,j,dij
 		end do

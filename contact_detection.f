@@ -41,10 +41,10 @@ PROGRAM contact_detection
 			
 			if (dij > 0.00) then
 				Fij(i,:) = (-4/3 * Eij * (Rij**2) * (dij)**3/2 ) * nij(i,:)
-				Fij(i,:) = -Fij(i,:)
+				Fji(i,:) = -Fij(i,:)
 			else
 				Fij(i,:) = 0.00
-				Fij(i,:) = 0.00
+				Fji(i,:) = 0.00
 			end if					
 			
 			V(i,:)  = V(i,:) !+ ((dt/m) * FT(i,1)) 

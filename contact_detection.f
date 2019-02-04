@@ -1,15 +1,15 @@
 PROGRAM contact_detection
 	implicit none
 	
-	integer					:: i, j
-	real					:: dij, distancia
-	real			 		:: Eij
-	real 					:: Rij
-	real, parameter			:: E = 1e3
-	real, parameter			:: poisson = 0.28
-	integer, parameter		:: np = 4
-	integer, parameter		:: c = 2
-	integer, parameter		:: r = 3.00
+	integer			:: i, j
+	real			:: dij, distancia
+	real			:: Eij
+	real 			:: Rij
+	real, parameter		:: E = 1e3
+	real, parameter		:: poisson = 0.28
+	integer, parameter	:: np = 4
+	integer, parameter	:: c = 2
+	integer, parameter	:: r = 3.00
 	real, dimension (np,c)	:: xy
 	real, dimension (np,c)	:: nij
 	real, dimension (np,c)	:: Fij

@@ -4,17 +4,17 @@ PROGRAM contact_detection
 	integer			:: i, j
 	real			:: dij, distancia
 	real			:: Eij
-	real 			:: Rij
-	real, parameter		:: E = 1e3
-	real, parameter		:: poisson = 0.28
-	integer, parameter	:: np = 4
-	integer, parameter	:: c = 2
-	integer, parameter	:: r = 3.00
-	real, dimension (np,c)	:: xy
-	real, dimension (np,c)	:: nij
-	real, dimension (np,c)	:: Fij
-	real, dimension (np,c)	:: Fji
-	real, dimension (np,c)	:: V
+	real 			:: Rij			!dij (delta), condición a evaluar para detectar contacto
+	real, parameter		:: E = 1e3		! rigidez de la partícula
+	real, parameter		:: poisson = 0.28	!coef. de Poisson
+	integer, parameter	:: np = 4		!número de partículas
+	integer, parameter	:: c = 2		!cantidad de columnas, análisis en 2D
+	integer, parameter	:: r = 3.00		!radio de la partícula
+	real, dimension (np,c)	:: xy			!vector posición
+	real, dimension (np,c)	:: nij			!vector normal, indica dirección ( de i ---> j )
+	real, dimension (np,c)	:: Fij			!vector fuerza normal
+	real, dimension (np,c)	:: Fji			!vector fuerza normal negativo
+	real, dimension (np,c)	:: V			!vector velocidad
 	
 	Eij = ((1 - poisson**2) / E) + ((1 - poisson**2) / E)
 	Rij = (1.00 / r) + (1.00 / r)

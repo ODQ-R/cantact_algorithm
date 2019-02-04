@@ -5,7 +5,7 @@ PROGRAM contact_detection
 	real			:: dij, distancia
 	real			:: Eij
 	real 			:: Rij			!dij (delta), condición a evaluar para detectar contacto
-	real, parameter		:: E = 1e3		! rigidez de la partícula
+	real, parameter		:: E = 1e3		!rigidez de la partícula
 	real, parameter		:: poisson = 0.28	!coef. de Poisson
 	integer, parameter	:: np = 4		!número de partículas
 	integer, parameter	:: c = 2		!cantidad de columnas, análisis en 2D
